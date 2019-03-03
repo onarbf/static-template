@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <meta charset="utf-8">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" type="text/css" href="css/taggmagedon.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
   </head>
+  <style>
+  body{
+    color:white;
+    background-color: black;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .wrapper{
+    height: 100vh;
+    z-index: 1;
+    }
+  .navegacion{
+    position:absolute;
+    z-index:3 !important;
+    color:white;
+    height: 100%;
+  }
+  .border{
+     border: 1px solid grey;
+  }
+  #menu-1:hover{
+    color: blue;
+    transition: color 0.5s ease;
+  }
+  .hide{
+  }
+  .img-wrapper{
+    max-width: 300px;
+  }
+  .section-text{
+    margin-top:-30px;
+    margin-left: 30px
+  }
+}
+  </style>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <div class="navegacion col-12 ">
+      <div class="col-12">
+        <div class="col-6 col-sm-6 pos-1 pad-5"><a id="menu-1" href="#">Radicales</a></div>
+        <div class="col-6 col-sm-6 pos-3 pad-5"><a id="menu-2" href="#">Psique</a></div>
+      </div>
+      <div class="col-12">
+        <div class="col-6 col-sm-6 pos-7 pad-5"><a id="menu-3" href="#">Sostenible</a></div>
+        <div class="col-6 col-sm-6 pos-9 pad-5"><a id="menu-4" href="#">Brecha</a></div>
+      </div>
+    </div>
+    <div class="col-12 wrapper bc-color">
+      <div class="col-12 pos-5 ">
+        <div class="col-8 col-md-11 height-300 pos-5 content-0 hide">
+            <div id="anim" class="gifloremipsum"></div>
+        </div>
+        <div class="col-12 height-300 pos-5 content-1 hide">
+          <div class="col-12 pos-2">
+            <h1>RADICALES</h1>
+          </div>
+          <div class="col-12 ">
+            <div class="col-4 pos-2 section-1  ">
+              <div class="img-wrapper ">
+                <img src="img/radicalizacion.gif" alt="">
+              </div>
+              <div class="col-8 section-text">
+                <h2 class="title">CENTRO MEMORIAL VICTIMAS DEL TERRORISMO</h2>
+                <br>
+                <p class="body">Una mirada profunda al fenÃ³meno de la radicalizaciÃ³n yihadista a travÃ©s de los ojos de ellas.</p>
+              </div>
+            </div>
+            <div class="col-4 pos-2 section-1  ">
+              <div class="img-wrapper ">
+                <img src="img/radicalizacion.gif" alt="">
+              </div>
+              <div class="col-8 section-text">
+                <h2 class="title">CENTRO MEMORIAL VICTIMAS DEL TERRORISMO</h2>
+                <br>
+                <p class="body">Una mirada profunda al fenÃ³meno de la radicalizaciÃ³n yihadista a travÃ©s de los ojos de ellas.</p>
+              </div>
+            </div>
+            <div class="col-4 pos-2 section-1  ">
+              <div class="img-wrapper ">
+                <img src="img/radicalizacion.gif" alt="">
+              </div>
+              <div class="col-8 section-text">
+                <h2 class="title">CENTRO MEMORIAL VICTIMAS DEL TERRORISMO</h2>
+                <br>
+                <p class="body">Una mirada profunda al fenÃ³meno de la radicalizaciÃ³n yihadista a travÃ©s de los ojos de ellas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 height-300 pos-5 content-2 hide">
+          content-2
+        </div>
+        <div class="col-12 height-300 pos-5 content-3 hide">
+          Content-3
+        </div>
+        <div class="col-8 height-300 pos-5 content-4 hide">
+          Content-4
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="js/lottie.js"></script>
+  <script src="js/anim.js"></script>
 </html>
